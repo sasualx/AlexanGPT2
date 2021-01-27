@@ -1,6 +1,6 @@
 import re
 lyrics = []
-with open('clean_data.txt', 'r') as f:
+with open('lyrics.txt', 'r') as f:
     lyrics = f.readlines()
 
 train = []
