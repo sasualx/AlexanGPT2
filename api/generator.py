@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-generator = pipeline('text-generation',model='/run/media/Data/model_parameters', tokenizer='gpt2', config={'max_length':10000})
+generator = pipeline('text-generation',model='../ML/model_parameters', tokenizer='gpt2', config={'max_length':10000})
 
 def generate_response(input):
     print(input)
