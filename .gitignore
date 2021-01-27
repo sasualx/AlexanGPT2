@@ -1,4 +1,6 @@
 .env
 .ipynb_checkpoints
-/api/ML/model_parameters/*
+/ML/model_parameters/*
 ngrok
+/ML/__pycache__/
+/api/__pycache__/
