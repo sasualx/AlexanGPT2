@@ -2,7 +2,7 @@ from typing import List
 
 from fastapi import FastAPI
 from pydantic import BaseModel
-from ML.generator import generate_response
+from generator import generate_response
 
 
 class data(BaseModel):
