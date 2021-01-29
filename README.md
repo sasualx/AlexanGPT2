@@ -33,5 +33,8 @@ Therefore, we decided to build a custom dataset by scraping lyrics.
 ## Examples
 Few examples of generated lyrics from given prompts are shown below.
 
+![Examples](https://user-images.githubusercontent.com/32291308/106306862-e72f0b80-625e-11eb-99bf-d59c4901f024.png)
+
+
 
 
