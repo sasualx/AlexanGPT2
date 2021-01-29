@@ -30,4 +30,8 @@ Therefore, we decided to build a custom dataset by scraping lyrics.
 * Finally, we settled on using GPT-2 as it was able to capture the structure of lyrics in the output.
 * Both Huggingface Transformers library and OpenAI's implementation were attempted.
 
+## Examples
+Few examples of generated lyrics from given prompts are shown below.
+
+
 
