@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "deep lyrics",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CapturePromptIntent",
+          "slots": [
+            {
+              "name": "prompt",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Write lyrics that start with {prompt}",
+            "I want some lyrics",
+            "Write some lyrics",
+            "Write lyrics",
+            "Generate some lyrics",
+            "Generate lyrics",
+            "Give me some lyrics",
+            "Help me with {prompt}",
+            "Write a song starting with {prompt}",
+            "Write a song with {prompt}",
+            "Finish the lyrics {prompt}",
+            "Start with {prompt}",
+            "Finish {prompt}"
+          ]
+        },
+        {
+          "name": "ContinueLyricsIntent",
+          "slots": [],
+          "samples": [
+            "Go on",
+            "Keep going please",
+            "Could you continue that please",
+            "Can you continue that",
+            "Keep going",
+            "Continue writing",
+            "Continue the lyrics",
+            "Keep writing",
+            "Continue"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "7"
+}
