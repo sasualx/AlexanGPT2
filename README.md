@@ -9,7 +9,7 @@ The skill aims to help the user build upon their lyrics which might be helpful f
 * Saying "Generate some lyrics" or "Write some lyrics".
 * Giving a prompt to build lyrics on. For example, "Start with **_prompt_**." or "Write a song with **_prompt_**."
 
-Upon generating lyrics, the user can ask the skill to continue building on the output. The model uses the last line 
+Upon generating lyrics, the user can ask the skill to continue building on the output. The model uses the last line to create further results.
 
 ## Datasets Explored
 
