@@ -18,8 +18,10 @@ from ask_sdk_model import Response
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-
+# We use NGROK here to expose the port to be used by Alexa.
+# This link changes everytime you run ngrok again.
 api_link = "https://d84a4aafee42.ngrok.io/"
+
 
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for Skill Launch."""
@@ -54,7 +56,7 @@ class CapturePromptIntentHandler(AbstractRequestHandler):
         #Send request to the api with user input
         speak_output = '. '.join(requests.post(api_link + "predict", json={'lyric': user_input}).json()['lyric'].split('\n'))
 
-        
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
@@ -71,10 +73,10 @@ class ContinueLyricsIntentHandler(AbstractRequestHandler):
         #Only run the intent if some lyrics were generated
         if (handler_input.attributes_manager.session_attributes["flag"] == 1):
             speak_output = '. '.join(requests.get(api_link+'continue').json()['lyric'].split('\n'))
-            
+
         else:
             speak_output = "I need lyrics first. You can say, Start With, followed by your lyrics."
-            
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
